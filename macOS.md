@@ -15,7 +15,7 @@ Abra ``Terminal`` en **``Finder > Aplicaciones > Utilidades > Terminal``**.
 Ejecute el siguiente comando para descargar el script de instalación:
 
 ```
-curl -O https://github.com/jdvelasq/CDA-01-instalacion/edit/master/macOS.sh
+curl -O https://raw.githubusercontent.com/jdvelasq/CDA-01-instalacion/master/macOS.sh
 ```
 
 

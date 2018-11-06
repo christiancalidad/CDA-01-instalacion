@@ -11,7 +11,7 @@ Para abrir Terminal, haga click en el ícono de búsqueda. Escriba **`Terminal`*
 Ejecute el siguiente comando para descargar el script de instalación:
 
 ```
-wget https://github.com/jdvelasq/CDA-01-instalacion/edit/master/ubuntu.sh
+wget https://raw.githubusercontent.com/jdvelasq/CDA-01-instalacion/master/ubuntu.sh
 ```
 
 
