@@ -1,6 +1,6 @@
 # Configuración de Ubuntu
 
-Esta guía describe el proceso de instalación de Python, IPython, R, Jupyter y los kernels para Jupyter de R (IRkernel) y Bash (IBash) en Ubuntu.
+Esta guía describe el proceso de instalación de Python, IPython, Jupyter y el Kernel para Bash (IBash) en Ubuntu.
 
 
 ### Paso 1
