@@ -3,9 +3,7 @@
 Este documento contiene la lista de paquetes para instalar en R. Copie y pegue
 los siguientes comandos en un script de R y ejecutelos.
 
-    source("http://bioconductor.org/biocLite.R")
-    biocLite("rhdf5")
-    install_github('ramnathv/rCharts', 'ramnathv')
+
 
     install.packages('assertthat')
     install.packages('base64enc')
