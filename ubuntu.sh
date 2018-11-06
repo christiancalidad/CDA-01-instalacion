@@ -1,8 +1,8 @@
 ##
 ## Python
 ## 
-wget https://github.com/jdvelasq/CDA-01-instalacion/edit/master/requirements.txt
-wget https://github.com/jdvelasq/CDA-01-instalacion/edit/master/requirements-R.txt
+wget https://raw.githubusercontent.com/jdvelasq/CDA-01-instalacion/master/requirements.txt
+wget https://raw.githubusercontent.com/jdvelasq/CDA-01-instalacion/master/requirements-R.txt
 wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh
 bash  Anaconda3-5.3.0-Linux-x86_64.sh
 sudo chmod u=rwx,g=rwx,o=rwx /usr/local/share
