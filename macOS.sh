@@ -35,8 +35,8 @@ conda install networkx
 Rscript -e "install.packages(readLines('requirements-R.txt'), repos='https://cloud.r-project.org')"
 Rscript -e "devtools::install_github('IRkernel/IRkernel')"
 Rscript -e "IRkernel::installspec(user = FALSE)"
-Rscropt -e "source('http://bioconductor.org/biocLite.R'); biocLite('rhdf5')"
-Rscropt -e "install_github('ramnathv/rCharts', 'ramnathv')"
+Rscript -e "source('http://bioconductor.org/biocLite.R'); biocLite('rhdf5')"
+Rscript -e "install_github('ramnathv/rCharts', 'ramnathv')"
 
 
 
