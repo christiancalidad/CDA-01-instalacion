@@ -14,27 +14,22 @@ Haga clic derecho sobre el logo de Windows. Abra
 
 
 ### Paso 2
-Verifique la compilación en la ventana **`Acerca de`**. Su compilación debe ser
-1607 o superior. Si su equipo no cumple este requisito, actualice su versión del
-sistema operativo o recurra a otra alternativa como Cygwin.
+Verifique la compilación en la ventana **`Acerca de`**. Su compilación debe ser 1607 o superior. Si su equipo no cumple este requisito, actualice su versión del sistema operativo.
 
 ![alt](images/win10-version.png)
 
 ### Paso 3
-Haga click derecho sobre el logo de Windows, abra **`Configuración`** y baje
-hasta **`Actualización y Seguridad`**.
+Haga click derecho sobre el logo de Windows, abra **`Configuración`** y baje hasta **`Actualización y Seguridad`**.
 
 
 ### Paso 4
 Haga click en **`Para Programadores`**.
 
 ### Paso 5
-Seleccione el **`Modo de Programador`**. Windows instalará los paquetes del
-modo de programador.
+Seleccione el **`Modo de Programador`**. Windows instalará los paquetes del modo de programador.
 
 ### Paso 6
-Haga click con el botón derecho en el logo de Windows en la barra de tareas y
-abra el **`Windows PowerShell (Administrator)`**.
+Haga click con el botón derecho en el logo de Windows en la barra de tareas y abra el **`Windows PowerShell (Administrator)`**.
 
 ### Paso 7
 Ejecute el siguiente comando en el PowerShell para activar el Subsistema de Linux
@@ -53,167 +48,36 @@ en el Powershell. El sistema instalará
 
 
 ### Paso 9
-Continue con la configuración del prompt respondiendo las preguntas realizadas
-por el instalador. Debe suministrar un nombre de usuario y contraseña. Cuando
-finalice la instalación, debe encontrar la aplicación Bash instalada en el
-sistema.
+Continue con la configuración del prompt respondiendo las preguntas realizadas por el instalador. Debe suministrar un nombre de usuario y contraseña. Cuando finalice la instalación, debe encontrar la aplicación Bash instalada en el sistema.
 
 ![alt](images/win10-ubuntu.png)
 
 
-### Paso 10 (Python)
-Descargue Anaconda con el siguiente comando en Bash:
+
+### Paso 10
+Ejecute el siguiente comando para descargar el script de instalación:
+
 ```
-wget  https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
+wget https://github.com/jdvelasq/CDA-01-instalacion/edit/master/ubuntu.sh
 ```
+
 
 ### Paso 11
-Instale Anaconda
+Una vez finalice la descarga, ejecute el script con:
+
 ```
-bash Anaconda3-5.2.0-Linux-x86_64.sh
+bash ./ubuntu.sh
 ```
+
+Este atento a las indicaciones del prompt. Cuando el instalador le pregunte si agrega Anaconda al path del sistema, responda **`yes`**. En varias ocasiones se le solicitar su password para realizar el proceso.
+
 
 ### Paso 12
-Cierre la ventana de Bash y vuelva a abrirla. Todos los servicios de Anaconda
-estarán disponibles para su uso.
-
-
-### Paso 13
-Instale los paquetes requeridos por Python. El listado se encuentra
-en el archivo [lista-python.md](lista-python.md)
-
-
-### Paso 13
-Para instalar el lenguaje R, ejecute el siguiente comando en Bash. El sistema
-pedirá su contraseña para poder continuar.
-
-```
-sudo apt-get install r-base
-```
-
-### Paso 14
-Instale las librerías requeridas por el IRkernel ejecutando los siguientes
-comandos en Bash.
-
-```
-sudo apt-get install libcurl4-openssl-dev
-```
-
-```
-sudo apt-get install build-essential
-```
-
-```
-sudo apt-get install libcurl4-gnutls-dev
-```
-
-```
-sudo apt-get install libxml2-dev
-```
-
-```
-sudo apt-get install libssl-dev
-```
-
-### Paso 15
-Abra el interprete de R en la línea de comandos:
-
-```
-sudo -i R
-```
-
-### Paso 16
-En el prompt de R, ejecute los siguientes comandos para instalar el IRkernel.
-
-```
-install.packages('repr')
-```
-
-```
-install.packages('IRdisplay')
-```
-
-```
-install.packages('evaluate')
-```
-
-```
-install.packages('crayon')
-```
-
-```
-install.packages('pbdZMQ')
-```
-
-```
-install.packages('devtools')
-```
-
-```
-install.packages('uuid')
-```
-
-```
-install.packages('digest')
-```
-
-```
-devtools::install_github('IRkernel/IRkernel')
-```
-
-### Paso 17
-Salga de R con el comando **`quit()`**
-
-### Paso 18
-Abra R en la consola de comandos:
-
-```
-R
-```
-
-### Paso 19
-Finalice la instalación del IRkernel ejecutando en R el siguiente comando:
-
-```
-IRkernel::installspec(user = FALSE)
-```
-
-### Paso 20
-Verifique que el kernel fue correctamente instalado. Abra Jupyter desde Bash con
-el siguiente comando:
+Verifique que jupyter se encuentra funcionando correctamente. Abra Jupyter:
 ```
 jupyter notebook
 ```
 
-### Paso 21
-En el menú **`New`** de Jupyter debe aparece la opción de crear notebooks que
-usen el lenguaje R.
-
-
-
-
-### Paso 22
-Instale los paquetes de R que aparecen en el archivo [lista-R.md](lista-R.md)
-
-
-### Paso 23 (IBash)
-Abra Bash y ejecute el siguiente comando:
-```
-sudo chmod u=rwx,g=rwx,o=rwx /usr/local/share
-```
-
-### Paso 24
-Instale **`IBash`**.
-
-```
-pip install bash_kernel
-```
-
-```
-python -m bash_kernel.install
-```
-
-### Paso 25
 En el menú **`New`** de Jupyter debe aparece la opción de crear notebooks en
 Bash.
 

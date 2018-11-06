@@ -1,6 +1,8 @@
 ##
 ## Descargas
 ## 
+curl -O https://github.com/jdvelasq/CDA-01-instalacion/edit/master/requirements.txt
+curl -O https://github.com/jdvelasq/CDA-01-instalacion/edit/master/requirements-R.txt
 curl -O https://repo.anaconda.com/archive/Anaconda3-5.3.0-MacOSX-x86_64.pkg
 curl -O https://cran.cnr.berkeley.edu/bin/macosx/R-3.5.1.pkg
 curl -O https://download1.rstudio.org/RStudio-1.1.463.dmg
