@@ -2,7 +2,6 @@
 ## Python
 ## 
 wget https://raw.githubusercontent.com/jdvelasq/CDA-01-instalacion/master/requirements.txt
-wget https://raw.githubusercontent.com/jdvelasq/CDA-01-instalacion/master/requirements-R.txt
 wget https://repo.anaconda.com/archive/Anaconda3-5.2.0-Linux-x86_64.sh
 bash  Anaconda3-5.2.0-Linux-x86_64.sh
 source ~/.bashrc
@@ -27,9 +26,24 @@ conda install seaborn
 conda install mpld3
 conda install networkx
 
+echo '\n\nAnaconda Python was installed!\n\n'
+
 ##
 ## R
 ##
+
+yn=N
+while true; do
+    read -p "\n\nDo you wish to install R/RStudio (y/N)?" yn
+    case $yn in
+        [Yy]* ) break;;
+        [Nn]* ) exit;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
+
+wget https://raw.githubusercontent.com/jdvelasq/CDA-01-instalacion/master/requirements-R.txt
+
 sudo apt install r-base
 
 sudo apt-get install libcurl4-openssl-dev
@@ -52,6 +66,7 @@ sudo apt install gdebi-core
 sudo gdebi rstudio-1.1.463-amd64.deb
 source ~/.bashrc
 
+echo '\n\nR/RStudio was installed!'
 
 
 
