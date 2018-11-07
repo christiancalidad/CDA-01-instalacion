@@ -38,19 +38,16 @@ Ejecute el siguiente comando en el PowerShell para activar el Subsistema de Linu
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
+El sistema se reiniciará.
+
+
 ### Paso 8
-Ejecute el comando
-```
-Bash
-```
-en el Powershell. El sistema instalará
-**`Ubuntu-on-Windows`** desde la tienda de aplicaciones de windows.
+Vaya a Microsoft Store (https://aka.ms/wslstore) e instale ``Ubuntu 18.04 LTS``. Cuando finalice, ancle la aplicación al inicio.
 
 
 ### Paso 9
-Continue con la configuración del prompt respondiendo las preguntas realizadas por el instalador. Debe suministrar un nombre de usuario y contraseña. Cuando finalice la instalación, debe encontrar la aplicación Bash instalada en el sistema.
+Inicie Ubuntu para continuar con la instalación. El sistema le solicitará que defina su nuevo nombre de usuario UNIX y su nuevo password para Ubuntu. Una vez definidos, la instalación finalizará.
 
-![alt](images/win10-ubuntu.png)
 
 
 
