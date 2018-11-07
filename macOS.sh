@@ -2,17 +2,17 @@
 ## Descargas
 ## 
 curl -O https://raw.githubusercontent.com/jdvelasq/CDA-01-instalacion/master/requirements.txt
-curl -O https://raw.githubusercontent.com/jdvelasq/CDA-01-instalacion/master/requirements-R.txt
+# curl -O https://raw.githubusercontent.com/jdvelasq/CDA-01-instalacion/master/requirements-R.txt
 curl -O https://repo.anaconda.com/archive/Anaconda3-5.3.0-MacOSX-x86_64.pkg
-curl -O https://cran.cnr.berkeley.edu/bin/macosx/R-3.5.1.pkg
-curl -O https://download1.rstudio.org/RStudio-1.1.463.dmg
+# curl -O https://cran.cnr.berkeley.edu/bin/macosx/R-3.5.1.pkg
+# curl -O https://download1.rstudio.org/RStudio-1.1.463.dmg
 ##
 ## Ejecuta los instaladores
 ##
 open -W  Anaconda3-5.3.0-MacOSX-x86_64.pkg
-open -W  R-3.5.1.pkg
-open -W  RStudio-1.1.463.dmg
-defaults write org.R-project.R force.LANG en_US.UTF-8
+# open -W  R-3.5.1.pkg
+# open -W  RStudio-1.1.463.dmg
+# defaults write org.R-project.R force.LANG en_US.UTF-8
 
 source ~/.bash_profile
 
@@ -34,11 +34,11 @@ conda install networkx
 ##
 ## Instala los paquetes de R
 ##
-Rscript -e "install.packages(readLines('requirements-R.txt'), repos='https://cloud.r-project.org')"
-Rscript -e "devtools::install_github('IRkernel/IRkernel')"
-Rscript -e "IRkernel::installspec(user = FALSE)"
-Rscript -e "source('http://bioconductor.org/biocLite.R'); biocLite('rhdf5')"
-Rscript -e "install_github('ramnathv/rCharts', 'ramnathv')"
+# Rscript -e "install.packages(readLines('requirements-R.txt'), repos='https://cloud.r-project.org')"
+# Rscript -e "devtools::install_github('IRkernel/IRkernel')"
+# Rscript -e "IRkernel::installspec(user = FALSE)"
+# Rscript -e "source('http://bioconductor.org/biocLite.R'); biocLite('rhdf5')"
+# Rscript -e "install_github('ramnathv/rCharts', 'ramnathv')"
 
 
 
